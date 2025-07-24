@@ -1,0 +1,68 @@
+@media (width <= 26.875em) {
+    main {
+        row-gap: 2rem;
+    }
+
+    section > header {
+        & h3 {
+            color: var(--text-color-secondary);
+        }
+    }
+
+    .container {
+        padding-inline: unset;
+        margin-inline: unset;
+        max-width: none;
+    }
+
+    .mobile-container {
+        overflow: hidden;
+        max-width: 26.875em;
+        margin-inline: 1rem;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: unset;
+    }
+
+    #primary {
+        padding-block: 1rem;
+
+        & .logo-img {
+            & img {
+                width: 6.25rem;
+                height: 1.5rem;
+            }
+        }
+    }
+
+    #secondary {
+        overflow-x: scroll;
+        gap: 2rem;
+    }
+
+    #featured {
+        display: flex;
+        flex-direction: column;
+
+        & .card {
+            img[alt="Imagem de Robô"] {
+                height: 26rem;
+            }
+        }
+
+        & .card-imgs {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                height: 12.5rem;
+                width: 100%;
+            }
+        }
+    }
+}
