@@ -96,6 +96,10 @@ section header {
 #ai {
   grid-area: ai;
 
+  strong.desktop-only {
+    font: inherit;
+  }
+
   
   header a {
     justify-self: end;
